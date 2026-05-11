@@ -56,9 +56,12 @@ class SistemaGestion:
             # Mostrar clientes
             print("Clientes disponibles:")
             for i, c in enumerate(self.clientes, 1):
-                print(f"{i}. {c}")
+                print(f"{i}. {c.get_nombre_completo()} - {c.cedula}")
 
             idx = int(input("\nSeleccione cliente (número): ")) - 1
+            if idx < 0 or idx >= len(self.clientes):
+                raise ValidacionError("Selección de cliente fuera de rango.")
+
             cliente = self.clientes[idx]
 
             # Mostrar servicios
@@ -67,25 +70,31 @@ class SistemaGestion:
                 print(f"{i}. {s.nombre} - ${s.precio_base:,}")
 
             idx_s = int(input("Seleccione servicio (número): ")) - 1
+            if idx_s < 0 or idx_s >= len(self.servicios):
+                raise ValidacionError("Selección de servicio fuera de rango.")
+
             servicio = self.servicios[idx_s]
 
-            duracion = float(input("Duración (horas o días según servicio): "))
-
+            duracion = float(input("Duración (horas o días): "))
+            
             reserva = Reserva(cliente, servicio, duracion)
-            reserva.calcular_costo()
             reserva.confirmar()
 
             self.reservas.append(reserva)
             print("🎉 Reserva creada y confirmada exitosamente.")
 
         except (ValueError, IndexError):
-            print("❌ Entrada inválida.")
+            logger.error("Entrada inválida en crear_reserva")
+            print("❌ Error: Entrada numérica inválida.")
+        except ValidacionError as e:
+            print(f"❌ Validación: {e}")
         except ReservaError as e:
             print(f"❌ Error en reserva: {e}")
         except Exception as e:
-            logger.error(f"Error creando reserva: {e}")
-            print("❌ Error inesperado.")
+            logger.critical(f"Error grave creando reserva: {e}", exc_info=True)
+            print("❌ Error inesperado en el sistema.")
 
+            
     def mostrar_reservas(self):
         print("\n--- Lista de Reservas ---")
         if not self.reservas:
