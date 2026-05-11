@@ -1,0 +1,40 @@
+2026-05-10 21:27:41,561 | INFO     | main:11 | 🚀 Iniciando Sistema Integral de Gestión Software FJ
+2026-05-10 21:27:41,565 | CRITICAL | main:29 | Error inesperado: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+Traceback (most recent call last):
+  File "c:\Users\FOX\Desktop\SoftwareFJ-Gestion-Sistemas\main.py", line 17, in main
+    print("✅ Estructura del proyecto cargada correctamente.")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\FOX\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+2026-05-10 21:27:42,884 | INFO     | main:32 | Ejecución del main.py finalizada.
+2026-05-10 21:28:28,118 | INFO     | main:11 | 🚀 Iniciando Sistema Integral de Gestión Software FJ
+2026-05-10 21:28:28,662 | INFO     | main:23 | Sistema inicializado sin errores.
+2026-05-10 21:28:28,720 | INFO     | main:32 | Ejecución del main.py finalizada.
+2026-05-10 21:35:51,133 | INFO     | main:47 | 🚀 Iniciando Sistema Software FJ - Paso 2
+2026-05-10 21:35:51,141 | INFO     | clientes:28 | Cliente creado exitosamente: Juan Carlos Rodríguez (Cédula: 123456789)
+2026-05-10 21:35:51,143 | ERROR    | clientes:35 | Cédula inválida (debe contener solo números): abc123
+2026-05-10 21:35:51,147 | WARNING  | main:40 | Validación correcta - Error esperado: La cédula debe contener solo números.
+2026-05-10 21:59:02,652 | INFO     | main:36 | 🚀 Iniciando Paso 3 - Servicios
+2026-05-10 21:59:02,692 | CRITICAL | main:42 | Error en Paso 3: 'module' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\FOX\Desktop\SoftwareFJ-Gestion-Sistemas\main.py", line 38, in main
+    probar_servicios()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\FOX\Desktop\SoftwareFJ-Gestion-Sistemas\main.py", line 15, in probar_servicios
+    sala = reserva_sala()
+TypeError: 'module' object is not callable
+2026-05-10 21:59:13,310 | INFO     | main:36 | 🚀 Iniciando Paso 3 - Servicios
+2026-05-10 21:59:13,311 | CRITICAL | main:42 | Error en Paso 3: 'module' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\FOX\Desktop\SoftwareFJ-Gestion-Sistemas\main.py", line 38, in main
+    probar_servicios()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\FOX\Desktop\SoftwareFJ-Gestion-Sistemas\main.py", line 15, in probar_servicios
+    sala = reserva_sala()
+TypeError: 'module' object is not callable
+2026-05-10 22:05:15,636 | INFO     | main:39 | 🚀 Iniciando Paso 3 - Servicios
+2026-05-10 22:05:15,639 | INFO     | servicio:21 | Servicio creado: Reserva de Sala (Precio base: $150000)
+2026-05-10 22:05:15,640 | INFO     | servicio:21 | Servicio creado: Alquiler de Equipos (Precio base: $80000)
+2026-05-10 22:05:15,640 | INFO     | servicio:21 | Servicio creado: Asesoría Especializada (Precio base: $250000)
