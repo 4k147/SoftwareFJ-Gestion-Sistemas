@@ -38,3 +38,10 @@ TypeError: 'module' object is not callable
 2026-05-10 22:05:15,639 | INFO     | servicio:21 | Servicio creado: Reserva de Sala (Precio base: $150000)
 2026-05-10 22:05:15,640 | INFO     | servicio:21 | Servicio creado: Alquiler de Equipos (Precio base: $80000)
 2026-05-10 22:05:15,640 | INFO     | servicio:21 | Servicio creado: Asesoría Especializada (Precio base: $250000)
+2026-05-10 22:29:28,017 | INFO     | main:44 | 🚀 Iniciando Paso 4 - Clase Reserva
+2026-05-10 22:29:28,022 | INFO     | clientes:28 | Cliente creado exitosamente: María González (Cédula: 987654321)
+2026-05-10 22:29:28,022 | INFO     | servicio:21 | Servicio creado: Reserva de Sala (Precio base: $150000)
+2026-05-10 22:29:28,023 | INFO     | reserva:27 | Nueva reserva creada - Cliente: María González | Servicio: Reserva de Sala
+2026-05-10 22:29:28,025 | INFO     | reserva:81 | Costo calculado: $900,000 para reserva de Reserva de Sala
+2026-05-10 22:29:28,027 | INFO     | reserva:81 | Costo calculado: $900,000 para reserva de Reserva de Sala
+2026-05-10 22:29:28,027 | INFO     | reserva:94 | Reserva CONFIRMADA - Cliente: María González
