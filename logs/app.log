@@ -56,3 +56,103 @@ TypeError: 'module' object is not callable
 2026-05-10 22:41:12,279 | INFO     | reserva:81 | Costo calculado: $750,000.0 para reserva de Asesoría Especializada
 2026-05-10 22:41:12,279 | INFO     | reserva:94 | Reserva CONFIRMADA - Cliente: Max Ochoa Ochoa Beltran
 2026-05-10 22:42:29,524 | INFO     | sistema:129 | Sistema finalizado por el usuario.
+2026-05-10 22:51:10,077 | INFO     | main:11 | 🚀 Iniciando Sistema Software FJ - Versión Final
+2026-05-10 22:51:10,078 | INFO     | servicio:21 | Servicio creado: Reserva de Sala (Precio base: $150000)
+2026-05-10 22:51:10,078 | INFO     | servicio:21 | Servicio creado: Alquiler de Equipos (Precio base: $80000)
+2026-05-10 22:51:10,079 | INFO     | servicio:21 | Servicio creado: Asesoría Especializada (Precio base: $250000)
+2026-05-10 22:51:10,079 | INFO     | sistema:26 | Sistema de Gestión inicializado
+2026-05-10 22:51:44,988 | INFO     | clientes:28 | Cliente creado exitosamente: Max Choa (Cédula: 1014209215)
+2026-05-10 22:52:00,832 | INFO     | reserva:27 | Nueva reserva creada - Cliente: Max Choa | Servicio: Alquiler de Equipos
+2026-05-10 22:52:00,833 | INFO     | reserva:81 | Costo calculado: $400,000.0 para reserva de Alquiler de Equipos
+2026-05-10 22:52:00,834 | INFO     | reserva:94 | Reserva CONFIRMADA - Cliente: Max Choa
+2026-05-10 23:02:20,853 | INFO     | sistema:138 | Sistema finalizado por el usuario.
+2026-05-10 23:03:52,715 | INFO     | clientes:28 | Cliente creado exitosamente: Carlos Ramírez (Cédula: 111222333)
+2026-05-10 23:03:52,789 | INFO     | servicio:21 | Servicio creado: Reserva de Sala (Precio base: $150000)
+2026-05-10 23:03:52,791 | INFO     | reserva:27 | Nueva reserva creada - Cliente: Carlos Ramírez | Servicio: Reserva de Sala
+2026-05-10 23:03:52,792 | INFO     | reserva:81 | Costo calculado: $600,000 para reserva de Reserva de Sala
+2026-05-10 23:03:52,792 | INFO     | reserva:94 | Reserva CONFIRMADA - Cliente: Carlos Ramírez
+2026-05-10 23:03:52,793 | ERROR    | clientes:35 | Cédula inválida (debe contener solo números): abc
+2026-05-10 23:03:52,794 | ERROR    | reserva:45 | Duración inválida: -5
+2026-05-10 23:03:52,798 | INFO     | test:42 | Pruebas de robustez completadas exitosamente
+2026-05-10 23:38:20,086 | INFO     | clientes:28 | Cliente creado exitosamente: Andrés Gómez (Cédula: 1234567890)
+2026-05-10 23:38:20,087 | INFO     | servicio:21 | Servicio creado: Reserva de Sala (Precio base: $150000)
+2026-05-10 23:38:20,087 | INFO     | servicio:21 | Servicio creado: Alquiler de Equipos (Precio base: $80000)
+2026-05-10 23:38:20,087 | INFO     | servicio:21 | Servicio creado: Asesoría Especializada (Precio base: $250000)
+2026-05-10 23:38:20,088 | INFO     | reserva:27 | Nueva reserva creada - Cliente: Andrés Gómez | Servicio: Reserva de Sala
+2026-05-10 23:38:20,088 | INFO     | reserva_sala:25 | Costo calculado ReservaSala: $900,000 (6h)
+2026-05-10 23:38:20,088 | INFO     | reserva:81 | Costo calculado: $900,000 para reserva de Reserva de Sala
+2026-05-10 23:38:20,089 | INFO     | reserva:94 | Reserva CONFIRMADA - Cliente: Andrés Gómez
+2026-05-10 23:38:20,089 | ERROR    | clientes:35 | Cédula inválida (debe contener solo números): abc
+2026-05-10 23:38:20,090 | ERROR    | reserva:45 | Duración inválida: -3
+2026-05-10 23:38:20,092 | INFO     | test:56 | Pruebas de robustez completadas exitosamente
+2026-05-10 23:39:41,693 | INFO     | main:11 | 🚀 Iniciando Sistema Software FJ - Versión Final
+2026-05-10 23:39:41,695 | INFO     | servicio:21 | Servicio creado: Reserva de Sala (Precio base: $150000)
+2026-05-10 23:39:41,695 | INFO     | servicio:21 | Servicio creado: Alquiler de Equipos (Precio base: $80000)
+2026-05-10 23:39:41,696 | INFO     | servicio:21 | Servicio creado: Asesoría Especializada (Precio base: $250000)
+2026-05-10 23:39:41,696 | INFO     | sistema:26 | Sistema de Gestión inicializado
+2026-05-10 23:40:07,633 | INFO     | clientes:28 | Cliente creado exitosamente: Max Ochoa (Cédula: 1014209215)
+2026-05-10 23:40:41,694 | ERROR    | clientes:38 | Cédula con longitud inválida: 1010
+2026-05-10 23:41:03,284 | INFO     | reserva:27 | Nueva reserva creada - Cliente: Max Ochoa | Servicio: Asesoría Especializada
+2026-05-10 23:41:03,284 | INFO     | reserva:81 | Costo calculado: $500,000.0 para reserva de Asesoría Especializada
+2026-05-10 23:41:03,285 | INFO     | reserva:94 | Reserva CONFIRMADA - Cliente: Max Ochoa
+2026-05-10 23:41:13,925 | INFO     | sistema:138 | Sistema finalizado por el usuario.
+2026-05-10 23:42:35,254 | INFO     | clientes:28 | Cliente creado exitosamente: Andrés Gómez (Cédula: 1234567890)
+2026-05-10 23:42:35,255 | INFO     | servicio:21 | Servicio creado: Reserva de Sala (Precio base: $150000)
+2026-05-10 23:42:35,256 | INFO     | servicio:21 | Servicio creado: Alquiler de Equipos (Precio base: $80000)
+2026-05-10 23:42:35,257 | INFO     | servicio:21 | Servicio creado: Asesoría Especializada (Precio base: $250000)
+2026-05-10 23:42:35,257 | INFO     | reserva:27 | Nueva reserva creada - Cliente: Andrés Gómez | Servicio: Reserva de Sala
+2026-05-10 23:42:35,269 | INFO     | reserva_sala:25 | Costo calculado ReservaSala: $900,000 (6h)
+2026-05-10 23:42:35,270 | INFO     | reserva:81 | Costo calculado: $900,000 para reserva de Reserva de Sala
+2026-05-10 23:42:35,273 | INFO     | reserva:94 | Reserva CONFIRMADA - Cliente: Andrés Gómez
+2026-05-10 23:42:35,281 | ERROR    | clientes:35 | Cédula inválida (debe contener solo números): abc
+2026-05-10 23:42:35,345 | ERROR    | reserva:45 | Duración inválida: -3
+2026-05-10 23:42:35,348 | INFO     | test:56 | Pruebas de robustez completadas exitosamente
+2026-05-10 23:47:33,572 | INFO     | clientes:28 | Cliente creado exitosamente: Andrés Gómez (Cédula: 1234567890)
+2026-05-10 23:47:33,622 | INFO     | servicio:21 | Servicio creado: Reserva de Sala (Precio base: $150000)
+2026-05-10 23:47:33,626 | INFO     | servicio:21 | Servicio creado: Alquiler de Equipos (Precio base: $80000)
+2026-05-10 23:47:33,634 | INFO     | servicio:21 | Servicio creado: Asesoría Especializada (Precio base: $250000)
+2026-05-10 23:47:33,697 | INFO     | reserva:27 | Nueva reserva creada - Cliente: Andrés Gómez | Servicio: Reserva de Sala
+2026-05-10 23:47:33,823 | INFO     | reserva_sala:25 | Costo calculado ReservaSala: $900,000 (6h)
+2026-05-10 23:47:34,000 | INFO     | reserva:81 | Costo calculado: $900,000 para reserva de Reserva de Sala
+2026-05-10 23:47:34,081 | INFO     | reserva:94 | Reserva CONFIRMADA - Cliente: Andrés Gómez
+2026-05-10 23:47:34,267 | ERROR    | clientes:35 | Cédula inválida (debe contener solo números): abc123
+2026-05-10 23:47:34,274 | ERROR    | reserva:45 | Duración inválida: -5
+2026-05-10 23:47:34,333 | ERROR    | reserva:45 | Duración inválida: 0
+2026-05-10 23:47:34,375 | INFO     | reserva:27 | Nueva reserva creada - Cliente: Andrés Gómez | Servicio: Alquiler de Equipos
+2026-05-10 23:47:34,376 | WARNING  | reserva:104 | Reserva CANCELADA - Cliente: Andrés Gómez
+2026-05-10 23:47:34,384 | INFO     | test:79 | Pruebas completadas: 9/10 exitosas
+2026-05-10 23:52:16,941 | INFO     | main:23 | === INICIO DE EJECUCIÓN DEL SISTEMA ===
+2026-05-10 23:52:16,943 | INFO     | servicio:21 | Servicio creado: Reserva de Sala (Precio base: $150000)
+2026-05-10 23:52:16,944 | INFO     | servicio:21 | Servicio creado: Alquiler de Equipos (Precio base: $80000)
+2026-05-10 23:52:16,944 | INFO     | servicio:21 | Servicio creado: Asesoría Especializada (Precio base: $250000)
+2026-05-10 23:52:16,945 | INFO     | sistema:26 | Sistema de Gestión inicializado
+2026-05-10 23:52:54,856 | INFO     | sistema:138 | Sistema finalizado por el usuario.
+2026-05-10 23:52:54,856 | INFO     | main:38 | === FIN DE EJECUCIÓN DEL SISTEMA ===
+2026-05-10 23:52:59,473 | INFO     | main:23 | === INICIO DE EJECUCIÓN DEL SISTEMA ===
+2026-05-10 23:52:59,475 | INFO     | servicio:21 | Servicio creado: Reserva de Sala (Precio base: $150000)
+2026-05-10 23:52:59,475 | INFO     | servicio:21 | Servicio creado: Alquiler de Equipos (Precio base: $80000)
+2026-05-10 23:52:59,475 | INFO     | servicio:21 | Servicio creado: Asesoría Especializada (Precio base: $250000)
+2026-05-10 23:52:59,476 | INFO     | sistema:26 | Sistema de Gestión inicializado
+2026-05-11 00:20:36,634 | INFO     | sistema:138 | Sistema finalizado por el usuario.
+2026-05-11 00:20:36,649 | INFO     | main:38 | === FIN DE EJECUCIÓN DEL SISTEMA ===
+2026-05-11 00:21:03,701 | INFO     | main:23 | === INICIO DE EJECUCIÓN DEL SISTEMA ===
+2026-05-11 00:21:03,705 | INFO     | servicio:21 | Servicio creado: Reserva de Sala (Precio base: $150000)
+2026-05-11 00:21:03,706 | INFO     | servicio:21 | Servicio creado: Alquiler de Equipos (Precio base: $80000)
+2026-05-11 00:21:03,706 | INFO     | servicio:21 | Servicio creado: Asesoría Especializada (Precio base: $250000)
+2026-05-11 00:21:03,706 | INFO     | sistema:26 | Sistema de Gestión inicializado
+2026-05-11 00:21:13,989 | INFO     | sistema:138 | Sistema finalizado por el usuario.
+2026-05-11 00:21:13,989 | INFO     | main:38 | === FIN DE EJECUCIÓN DEL SISTEMA ===
+2026-05-11 00:21:17,556 | INFO     | clientes:28 | Cliente creado exitosamente: Andrés Gómez (Cédula: 1234567890)
+2026-05-11 00:21:17,557 | INFO     | servicio:21 | Servicio creado: Reserva de Sala (Precio base: $150000)
+2026-05-11 00:21:17,558 | INFO     | servicio:21 | Servicio creado: Alquiler de Equipos (Precio base: $80000)
+2026-05-11 00:21:17,558 | INFO     | servicio:21 | Servicio creado: Asesoría Especializada (Precio base: $250000)
+2026-05-11 00:21:17,559 | INFO     | reserva:27 | Nueva reserva creada - Cliente: Andrés Gómez | Servicio: Reserva de Sala
+2026-05-11 00:21:17,559 | INFO     | reserva_sala:25 | Costo calculado ReservaSala: $900,000 (6h)
+2026-05-11 00:21:17,559 | INFO     | reserva:81 | Costo calculado: $900,000 para reserva de Reserva de Sala
+2026-05-11 00:21:17,559 | INFO     | reserva:94 | Reserva CONFIRMADA - Cliente: Andrés Gómez
+2026-05-11 00:21:17,564 | ERROR    | clientes:35 | Cédula inválida (debe contener solo números): abc123
+2026-05-11 00:21:17,570 | ERROR    | reserva:45 | Duración inválida: -5
+2026-05-11 00:21:17,576 | ERROR    | reserva:45 | Duración inválida: 0
+2026-05-11 00:21:17,581 | INFO     | reserva:27 | Nueva reserva creada - Cliente: Andrés Gómez | Servicio: Alquiler de Equipos
+2026-05-11 00:21:17,581 | WARNING  | reserva:104 | Reserva CANCELADA - Cliente: Andrés Gómez
+2026-05-11 00:21:17,585 | INFO     | test:79 | Pruebas completadas: 9/10 exitosas

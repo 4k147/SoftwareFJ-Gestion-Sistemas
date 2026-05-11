@@ -1,22 +1,58 @@
-# Software FJ - Sistema de Gestión de Clientes, Servicios y Reservas
+# 🚀 Software FJ - Sistema de Gestión de Servicios
 
-**Trabajo Fase 4 - Programación Orientada a Objetos (UNAD)**
+**Trabajo Final - Fase 4**  
+**Programación Orientada a Objetos**  
+**Universidad Nacional Abierta y a Distancia (UNAD)**
 
-## Descripción
-Sistema integral orientado a objetos para la gestión de clientes, servicios y reservas. Desarrollado sin base de datos, utilizando solo objetos en memoria y archivos para logs.
+---
 
-## Características Principales
-- **Programación Orientada a Objetos** completa (Abstracción, Herencia, Polimorfismo, Encapsulación)
-- **Manejo avanzado de excepciones** (excepciones personalizadas, try/except/else/finally)
-- Sistema de **logging** profesional
-- Validaciones robustas
-- Código modular y bien documentado
+## 📋 Descripción del Proyecto
 
-## Estructura del Proyecto
-- `src/models/` → Clases principales
-- `src/exceptions.py` → Excepciones personalizadas
-- `logs/app.log` → Registro de eventos y errores
+Sistema integral desarrollado en **Python** utilizando **Programación Orientada a Objetos (POO)** para la gestión de clientes, servicios y reservas de la empresa **Software FJ**.
 
-## Cómo Ejecutar
+El sistema permite registrar clientes, crear reservas de salas, alquiler de equipos y asesorías especializadas, todo esto sin utilizar bases de datos (solo objetos en memoria y archivos de logs).
+
+---
+
+## ✨ Características Principales
+
+- **Abstracción**: Clase abstracta `Servicio`
+- **Herencia**: Tres servicios que heredan de la clase abstracta
+- **Polimorfismo**: Método `calcular_costo()` con comportamiento diferente
+- **Encapsulación**: Atributos privados en la clase `Cliente`
+- **Manejo Avanzado de Excepciones**: Excepciones personalizadas + bloques `try/except/else/finally`
+- **Logging Profesional**: Registro detallado de eventos y errores
+- **Validaciones Robustas**: Control de datos inválidos
+- **Métodos Sobrecargados** (simulados con `**kwargs`)
+- **Interfaz de Menú** interactiva
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+- **Python 3**
+- Programación Orientada a Objetos
+- Módulos y paquetes
+- Manejo de archivos (logs)
+- Excepciones personalizadas
+
+---
+
+## 📁 Estructura del Proyecto
+
 ```bash
-python main.py
+SoftwareFJ-Gestion-Sistemas/
+├── main.py                 # Punto de entrada
+├── tests.py                # Pruebas de robustez
+├── README.md
+├── logs/
+│   └── app.log             # Registro de eventos
+└── src/
+    ├── exceptions.py
+    ├── logger.py
+    └── models/
+        ├── cliente.py
+        ├── reserva.py
+        ├── servicio.py
+        ├── sistema.py
+        └── servicios/

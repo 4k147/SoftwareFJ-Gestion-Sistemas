@@ -1,6 +1,6 @@
 # src/models/servicio.py
 """
-Clase Abstracta Servicio - Base para todos los servicios
+Clase Abstracta Servicio con polimorfismo y sobrecarga simulada
 """
 
 from abc import ABC, abstractmethod
@@ -22,7 +22,6 @@ class Servicio(ABC):
 
     def _validar_precio(self, precio: float) -> float:
         if precio <= 0:
-            logger.error(f"Precio inválido: {precio}")
             raise ServicioError("El precio base debe ser mayor a cero.")
         return round(precio, 2)
 
@@ -38,22 +37,19 @@ class Servicio(ABC):
     def descripcion(self):
         return self._descripcion
 
-    # ==================== MÉTODOS ABSTRACTOS (Polimorfismo) ====================
-
+    # ==================== MÉTODO SOBRECARGADO====================
     @abstractmethod
-    def calcular_costo(self, duracion: float = 1.0) -> float:
-        """Calcula el costo total según el tipo de servicio"""
+    def calcular_costo(self, duracion: float = 1.0, **kwargs) -> float:
+        """
+        Método sobrecargado (simulado):
+        - duracion: horas o días
+        - kwargs: aplicar_descuento, impuesto, etc.
+        """
         pass
 
     @abstractmethod
     def obtener_detalles(self) -> str:
-        """Retorna detalles específicos del servicio"""
         pass
-
-    # ==================== MÉTODO COMÚN ====================
 
     def __str__(self):
         return f"Servicio: {self._nombre} | Precio base: ${self._precio_base:,}"
-
-    def __repr__(self):
-        return f"{self.__class__.__name__}(nombre={self._nombre})"

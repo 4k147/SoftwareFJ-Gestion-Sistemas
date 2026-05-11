@@ -1,4 +1,3 @@
-# src/models/servicios/asesoria.py
 from src.models.servicio import Servicio
 from src.exceptions import ServicioError
 
@@ -6,20 +5,21 @@ from src.exceptions import ServicioError
 class Asesoria(Servicio):
     """Servicio de Asesoría Especializada"""
 
-    def __init__(self, nombre: str = "Asesoría Especializada", precio_base: float = 250000):
-        super().__init__(nombre, precio_base, "Asesorías técnicas y consultorías especializadas")
+    def __init__(self):
+        super().__init__("Asesoría Especializada", 250000, "Consultorías técnicas")
 
-    def calcular_costo(self, horas: float = 1.0) -> float:
+    def calcular_costo(self, horas: float = 1.0, **kwargs) -> float:
         if horas <= 0:
             raise ServicioError("La duración debe ser mayor a 0 horas.")
-        
+
         costo = self.precio_base * horas
-        # Recargo por asesor senior
-        if horas >= 5:
-            costo *= 1.1
+
+        if kwargs.get("recargo_experto", False) and horas >= 5:
+            costo *= 1.12
+        if impuesto := kwargs.get("impuesto", 0):
+            costo *= (1 + impuesto)
+
         return round(costo, 2)
 
     def obtener_detalles(self) -> str:
-        return (f"👨‍💼 {self.nombre}\n"
-                f"   Tarifa por hora: ${self.precio_base:,}\n"
-                f"   Áreas: Desarrollo de software, Gestión de proyectos, Ciberseguridad")
+        return f"👨‍💼 {self.nombre} - Desarrollo, Gestión y Ciberseguridad"
