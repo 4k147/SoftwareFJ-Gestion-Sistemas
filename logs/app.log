@@ -45,3 +45,14 @@ TypeError: 'module' object is not callable
 2026-05-10 22:29:28,025 | INFO     | reserva:81 | Costo calculado: $900,000 para reserva de Reserva de Sala
 2026-05-10 22:29:28,027 | INFO     | reserva:81 | Costo calculado: $900,000 para reserva de Reserva de Sala
 2026-05-10 22:29:28,027 | INFO     | reserva:94 | Reserva CONFIRMADA - Cliente: María González
+2026-05-10 22:39:48,294 | INFO     | main:11 | 🚀 Iniciando Sistema Software FJ - Versión Final
+2026-05-10 22:39:48,295 | INFO     | servicio:21 | Servicio creado: Reserva de Sala (Precio base: $150000)
+2026-05-10 22:39:48,296 | INFO     | servicio:21 | Servicio creado: Alquiler de Equipos (Precio base: $80000)
+2026-05-10 22:39:48,297 | INFO     | servicio:21 | Servicio creado: Asesoría Especializada (Precio base: $250000)
+2026-05-10 22:39:48,298 | INFO     | sistema:26 | Sistema de Gestión inicializado
+2026-05-10 22:40:33,713 | INFO     | clientes:28 | Cliente creado exitosamente: Max Ochoa Ochoa Beltran (Cédula: 1014209215)
+2026-05-10 22:41:12,277 | INFO     | reserva:27 | Nueva reserva creada - Cliente: Max Ochoa Ochoa Beltran | Servicio: Asesoría Especializada
+2026-05-10 22:41:12,278 | INFO     | reserva:81 | Costo calculado: $750,000.0 para reserva de Asesoría Especializada
+2026-05-10 22:41:12,279 | INFO     | reserva:81 | Costo calculado: $750,000.0 para reserva de Asesoría Especializada
+2026-05-10 22:41:12,279 | INFO     | reserva:94 | Reserva CONFIRMADA - Cliente: Max Ochoa Ochoa Beltran
+2026-05-10 22:42:29,524 | INFO     | sistema:129 | Sistema finalizado por el usuario.
