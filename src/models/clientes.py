@@ -27,7 +27,7 @@ class Cliente:
         
         logger.info(f"Cliente creado exitosamente: {self._nombre} {self._apellido} (Cédula: {self._cedula})")
 
-    # ==================== VALIDACIONES ====================
+    #  VALIDACIONES 
 
     def _validar_cedula(self, cedula: str) -> str:
         cedula = cedula.strip()
@@ -67,7 +67,7 @@ class Cliente:
             raise ValidacionError("El teléfono debe tener entre 7 y 15 dígitos.")
         return telefono
 
-    # ==================== GETTERS (Encapsulación) ====================
+    #  GETTERS (Encapsulación) 
 
     @property
     def cedula(self):
@@ -93,7 +93,7 @@ class Cliente:
     def direccion(self):
         return self._direccion
 
-    # ==================== MÉTODOS ====================
+    #  MÉTODOS 
 
     def get_nombre_completo(self) -> str:
         return f"{self._nombre} {self._apellido}"

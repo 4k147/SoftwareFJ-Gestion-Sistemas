@@ -42,11 +42,11 @@ El sistema permite registrar clientes, crear reservas de salas, alquiler de equi
 
 ```bash
 SoftwareFJ-Gestion-Sistemas/
-├── main.py                 # Punto de entrada
-├── tests.py                # Pruebas de robustez
+├── main.py                 
+├── tests.py                
 ├── README.md
 ├── logs/
-│   └── app.log             # Registro de eventos
+│   └── app.log             
 └── src/
     ├── exceptions.py
     ├── logger.py

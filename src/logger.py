@@ -15,16 +15,16 @@ def configurar_logger():
     logger = logging.getLogger("SoftwareFJ")
     logger.setLevel(logging.DEBUG)
     
-    # Evitar duplicar handlers
+    
     if logger.handlers:
         return logger
 
-    # Formato detallado para archivo
+    
     file_formatter = logging.Formatter(
         '%(asctime)s | %(levelname)-8s | %(module)s:%(lineno)d | %(message)s'
     )
     
-    # Formato más limpio para consola
+
     console_formatter = logging.Formatter(
         '%(levelname)s | %(message)s'
     )
@@ -45,5 +45,5 @@ def configurar_logger():
     return logger
 
 
-# Instancia global
+
 logger = configurar_logger()

@@ -26,7 +26,7 @@ class Reserva:
 
         logger.info(f"Nueva reserva creada - Cliente: {cliente.get_nombre_completo()} | Servicio: {servicio.nombre}")
 
-    # ==================== VALIDACIONES ====================
+    #  VALIDACIONES 
 
     def _validar_cliente(self, cliente):
         if not isinstance(cliente, Cliente):
@@ -46,7 +46,7 @@ class Reserva:
             raise ReservaInvalidaError("La duración debe ser mayor a 0.")
         return round(duracion, 2)
 
-    # ==================== PROPIEDADES ====================
+    #  PROPIEDADES 
 
     @property
     def cliente(self):
@@ -72,7 +72,7 @@ class Reserva:
     def fecha_reserva(self):
         return self._fecha_reserva
 
-    # ==================== MÉTODOS ====================
+    #  MÉTODOS 
 
     def calcular_costo(self) -> float:
         """Calcula el costo usando polimorfismo del servicio"""

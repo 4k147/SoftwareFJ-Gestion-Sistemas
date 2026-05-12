@@ -156,3 +156,8 @@ TypeError: 'module' object is not callable
 2026-05-11 00:21:17,581 | INFO     | reserva:27 | Nueva reserva creada - Cliente: Andrés Gómez | Servicio: Alquiler de Equipos
 2026-05-11 00:21:17,581 | WARNING  | reserva:104 | Reserva CANCELADA - Cliente: Andrés Gómez
 2026-05-11 00:21:17,585 | INFO     | test:79 | Pruebas completadas: 9/10 exitosas
+2026-05-11 00:32:16,057 | INFO     | main:23 | === INICIO DE EJECUCIÓN DEL SISTEMA ===
+2026-05-11 00:32:16,058 | INFO     | servicio:21 | Servicio creado: Reserva de Sala (Precio base: $150000)
+2026-05-11 00:32:16,059 | INFO     | servicio:21 | Servicio creado: Alquiler de Equipos (Precio base: $80000)
+2026-05-11 00:32:16,059 | INFO     | servicio:21 | Servicio creado: Asesoría Especializada (Precio base: $250000)
+2026-05-11 00:32:16,059 | INFO     | sistema:26 | Sistema de Gestión inicializado
